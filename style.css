@@ -1,30 +1,30 @@
 /* --- CONFIGURACIÓN GENERAL --- */
 html {
-    scroll-behavior: smooth; /* Esto hace que el menú se deslice suavemente */
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #96b4d1; /* El color azul claro que elegiste */
-    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Un gris azulado más suave para que resalten las tarjetas blancas */
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
+    color: #333;
 }
 
 /* --- ENCABEZADO Y MENÚ --- */
 header {
     background-color: white; 
-    padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: sticky; /* Opcional: el menú se queda arriba al bajar */
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 .logo {
-    max-height: 100px;
+    max-height: 70px; /* Reducido un poco para que no ocupe tanta pantalla al bajar */
     display: block;
-    margin: 0 auto 15px auto;
+    margin: 0 auto 10px auto;
 }
 
 .menu {
@@ -32,48 +32,58 @@ header {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
+    margin: 10px 0;
 }
 
 .menu a {
     text-decoration: none;
-    color: #002d5a; /* Azul oscuro para los links */
+    color: #002d5a;
     font-weight: bold;
+    font-size: 16px;
     transition: 0.3s;
 }
 
 .menu a:hover {
-    color: #00d4ff; /* Brillo al pasar el mouse */
+    color: #00d4ff;
 }
 
-/* --- TEXTOS PRINCIPALES --- */
-h1 {
-    color: #0056b3;
-    font-size: 50px;
-    margin-top: 40px;
+/* --- SECCIÓN HERO (Banner Principal) --- */
+.hero {
+    background: linear-gradient(rgba(0,45,90,0.05), rgba(0,45,90,0.05)), white;
+    padding: 80px 20px;
+    text-align: center;
 }
 
-p {
-    color: #333;
+.hero h1 {
+    color: #002d5a;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
     font-size: 20px;
+    color: #555;
 }
 
-/* --- BOTÓN DE WHATSAPP/CONTACTO --- */
+/* --- BOTONES --- */
 .boton-contacto {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 15px 35px;
     background-color: #28a745;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50px; /* Más redondeado para un look moderno */
     font-weight: bold;
-    margin-top: 20px;
     transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
 }
 
 .boton-contacto:hover {
     background-color: #218838;
-    transform: scale(1.1);
+    transform: translateY(-3px); /* Efecto de flotar */
 }
 
 /* --- SECCIÓN DE PRODUCTOS --- */
@@ -83,47 +93,47 @@ p {
     justify-content: center;
     gap: 30px;
     padding: 60px 20px;
+    background-color: #96b4d1; /* El color que te gustaba para destacar productos */
 }
 
 .tarjeta-producto {
     background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    width: 250px;
+    border-radius: 15px;
+    width: 280px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-10px); /* Las tarjetas suben al pasar el mouse */
 }
 
 .img-producto {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 15px;
 }
 
 .precio {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     color: #0056b3;
-    margin: 10px 0;
 }
 
 .boton-comprar {
     background-color: #ffc107;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px;
+    border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
     width: 100%;
-    transition: 0.3s;
+    margin-top: 10px;
 }
 
-.boton-comprar:hover {
-    background-color: #e0a800;
-}
-
-/* --- SECCIÓN DE CONTACTO Y MAPA --- */
+/* --- CONTACTO Y MAPA --- */
 .contacto-seccion {
     padding: 80px 20px;
     background-color: #fff;
@@ -134,7 +144,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -144,63 +154,59 @@ p {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    text-align: left;
 }
 
 .formulario input, .formulario textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.boton-enviar {
-    background-color: #0056b3;
-    color: white;
-    border: none;
     padding: 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.boton-enviar:hover {
-    background-color: #003d80;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
 }
 
 .mapa {
     flex: 1;
     min-width: 300px;
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: 350px;
 }
+
+/* --- PIE DE PÁGINA --- */
 .pie-pagina {
     background-color: #002d5a;
     color: white;
-    padding: 30px 0;
-    margin-top: 50px;
+    padding: 40px 20px;
 }
 
 .redes-sociales {
-    margin-top: 15px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .redes-sociales a {
     color: #00d4ff;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 18px;
 }
 
-.redes-sociales a:hover {
-    color: white;
-    text-decoration: underline;
-}
+/* --- AJUSTES PARA CELULARES (RESPONSIVE) --- */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .menu {
+        gap: 15px;
+    }
 
-.whatsapp {
-    color: #28a745 !important; /* Color verde para resaltar WhatsApp */
+    .menu a {
+        font-size: 14px;
+    }
+
+    .tarjeta-producto {
+        width: 100%; /* Una sola tarjeta por fila en celular */
+        max-width: 320px;
+    }
 }
