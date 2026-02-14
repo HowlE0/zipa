@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zipa Electronics | Tecnología</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="logo-zipa.png" alt="Logo Zipa Electronics" class="logo">
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nuestros-productos">Productos</a></li> 
+                <li><a href="#seccion-contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-contenido">
+                <h1>Bienvenidos a Zipa Electronics</h1>
+                <p>Tu aliado en componentes y soluciones tecnológicas con la mejor calidad del mercado.</p>
+                <a href="#seccion-contacto" class="boton-contacto">Contactar con un asesor</a>
+            </div>
+        </section>
+
+        <section id="nuestros-productos" class="contenedor-productos">
+            <div class="tarjeta-producto">
+                <img src="https://via.placeholder.com/200x150?text=Multimetro" alt="Multímetro" class="img-producto">
+                <h3>Multímetro Digital</h3>
+                <p class="precio">$85.000</p>
+                <button class="boton-comprar">Comprar</button>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="https://via.placeholder.com/200x150?text=Cautin" alt="Cautín" class="img-producto">
+                <h3>Cautín Profesional</h3>
+                <p class="precio">$45.000</p>
+                <button class="boton-comprar">Comprar</button>
+            </div>
+
+            <div class="tarjeta-producto">
+                <img src="https://via.placeholder.com/200x150?text=Osciloscopio" alt="Osciloscopio" class="img-producto">
+                <h3>Osciloscopio USB</h3>
+                <p class="precio">$320.000</p>
+                <button class="boton-comprar">Comprar</button>
+            </div>
+        </section>
+
+        <section id="seccion-contacto" class="contacto-seccion">
+            <h2>Contáctanos</h2>
+            <div class="contacto-flex">
+                
+                <form action="https://formspree.io/f/mjgeyqoj" method="POST" class="formulario">
+                    <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                    <input type="email" name="email" placeholder="Tu Correo" required>
+                    <textarea name="mensaje" placeholder="¿En qué podemos ayudarte?" rows="5" required></textarea>
+                    <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+                </form>
+
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3977.235143966707!2d-74.11971792650694!3d4.551666342934615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNMKwMzMnMDYuMCJOIDc0wrAwNycwMS43Ilc!5e0!3m2!1ses-419!2sco!4v1771018636804!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="footer-contenido">
+            <p>© 2026 Zipa Electronics - Todos los derechos reservados</p>
+            <div class="redes-sociales">
+                <a href="https://facebook.com/zipaelectronics" target="_blank">Facebook</a>
+                <a href="https://instagram.com/zipaelectronics" target="_blank">Instagram</a>
+                <a href="https://wa.me/573000000000" class="whatsapp">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

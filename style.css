@@ -1,0 +1,206 @@
+/* --- CONFIGURACIÓN GENERAL --- */
+html {
+    scroll-behavior: smooth; /* Esto hace que el menú se deslice suavemente */
+}
+
+body {
+    background-color: #96b4d1; /* El color azul claro que elegiste */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* --- ENCABEZADO Y MENÚ --- */
+header {
+    background-color: white; 
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky; /* Opcional: el menú se queda arriba al bajar */
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    max-height: 100px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #002d5a; /* Azul oscuro para los links */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #00d4ff; /* Brillo al pasar el mouse */
+}
+
+/* --- TEXTOS PRINCIPALES --- */
+h1 {
+    color: #0056b3;
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+p {
+    color: #333;
+    font-size: 20px;
+}
+
+/* --- BOTÓN DE WHATSAPP/CONTACTO --- */
+.boton-contacto {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.boton-contacto:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+/* --- SECCIÓN DE PRODUCTOS --- */
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 20px;
+}
+
+.tarjeta-producto {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.img-producto {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.precio {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0056b3;
+    margin: 10px 0;
+}
+
+.boton-comprar {
+    background-color: #ffc107;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.boton-comprar:hover {
+    background-color: #e0a800;
+}
+
+/* --- SECCIÓN DE CONTACTO Y MAPA --- */
+.contacto-seccion {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.contacto-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.formulario {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.formulario input, .formulario textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.boton-enviar {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-enviar:hover {
+    background-color: #003d80;
+}
+
+.mapa {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.pie-pagina {
+    background-color: #002d5a;
+    color: white;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.redes-sociales {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes-sociales a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redes-sociales a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.whatsapp {
+    color: #28a745 !important; /* Color verde para resaltar WhatsApp */
+}
