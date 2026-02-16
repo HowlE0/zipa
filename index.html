@@ -8,6 +8,11 @@
 </head>
 <body>
 
+    <div id="loader">
+        <div class="spinner"></div>
+        <p>Zipa Electronics...</p>
+    </div>
+
     <header>
         <img src="logo-zipa.png" alt="Logo Zipa Electronics" class="logo">
         <nav>
@@ -25,6 +30,24 @@
                 <h1>Bienvenidos a Zipa Electronics</h1>
                 <p>Tu aliado en componentes y soluciones tecnológicas con la mejor calidad del mercado.</p>
                 <a href="#seccion-contacto" class="boton-contacto">Contactar con un asesor</a>
+            </div>
+        </section>
+
+        <section class="garantia-seccion">
+            <div class="garantia-item">
+                <span class="icono">🛡️</span>
+                <h3>Calidad Garantizada</h3>
+                <p>Todos nuestros componentes son testeados antes del envío.</p>
+            </div>
+            <div class="garantia-item">
+                <span class="icono">🚚</span>
+                <h3>Envíos Rápidos</h3>
+                <p>Despachos a todo el país en menos de 24 horas.</p>
+            </div>
+            <div class="garantia-item">
+                <span class="icono">💬</span>
+                <h3>Soporte Técnico</h3>
+                <p>Asesoría especializada para tus proyectos electrónicos.</p>
             </div>
         </section>
 
@@ -54,7 +77,6 @@
         <section id="seccion-contacto" class="contacto-seccion">
             <h2>Contáctanos</h2>
             <div class="contacto-flex">
-                
                 <form action="https://formspree.io/f/mjgeyqoj" method="POST" class="formulario">
                     <input type="text" name="nombre" placeholder="Tu Nombre" required>
                     <input type="email" name="email" placeholder="Tu Correo" required>
@@ -63,12 +85,8 @@
                 </form>
 
                 <div class="mapa">
-                    <iframe 
-                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d509016.5836462942!2d-74.43749455299613!3d4.648905520406606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses-419!2sco!4v1771084912620!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d509016.5836462942!2d-74.43749455299613!3d4.648905520406606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses-419!2sco!4v1771084912620!5m2!1ses-419!2sco" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-
             </div>
         </section>
     </main>
@@ -84,5 +102,14 @@
         </div>
     </footer>
 
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                setTimeout(() => loader.style.display = 'none', 500);
+            }, 1000); 
+        });
+    </script>
 </body>
 </html>
