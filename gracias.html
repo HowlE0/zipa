@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Mensaje Recibido! | Zipa Electronics</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .gracias-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .icono-check {
+            font-size: 80px;
+            color: #28a745;
+            margin-bottom: 20px;
+            animation: pop 0.5s cubic-bezier(0.26, 0.53, 0.74, 1.48);
+        }
+        @keyframes pop {
+            0% { transform: scale(0); }
+            100% { transform: scale(1); }
+        }
+        .boton-regresar {
+            margin-top: 30px;
+            text-decoration: none;
+            background: #002d5a;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .boton-regresar:hover { background: #00d4ff; color: #002d5a; }
+    </style>
+</head>
+<body>
+    <div class="gracias-container">
+        <div class="icono-check">✔️</div>
+        <h1>¡Muchas Gracias!</h1>
+        <p>Hemos recibido tu mensaje correctamente. Un asesor de <strong>Zipa Electronics</strong> se pondrá en contacto contigo muy pronto.</p>
+        <a href="index.html" class="boton-regresar">Volver a la tienda</a>
+    </div>
+</body>
+</html>
