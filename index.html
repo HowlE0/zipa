@@ -65,9 +65,9 @@
                     <h2>¡Súper Combo de Inicio!</h2>
                     <p>Lleva Multímetro + Cautín + Soldadura con un 20% de descuento.</p>
                     <div class="contador">
-                        <div><span>02</span><small>Días</small></div>
-                        <div><span>14</span><small>Horas</small></div>
-                        <div><span>35</span><small>Min</small></div>
+                        <div><span>00</span><small>Días</small></div>
+                        <div><span>00</span><small>Horas</small></div>
+                        <div><span>00</span><small>Min</small></div>
                     </div>
                     <a href="https://wa.me/573017723021?text=Hola!%20Me%20interesa%20la%20oferta%20del%20combo%20de%20inicio" class="boton-oferta">Reclamar Oferta</a>
                 </div>
@@ -130,6 +130,7 @@
     </a>
 
     <script>
+        // Lógica del Loader
         window.addEventListener('load', () => {
             const loader = document.getElementById('loader');
             setTimeout(() => {
@@ -137,6 +138,34 @@
                 setTimeout(() => loader.style.display = 'none', 500);
             }, 1000); 
         });
+
+        // Lógica del Contador Automático
+        const fechaLimite = new Date();
+        fechaLimite.setDate(fechaLimite.getDate() + 2); // Oferta expira en 2 días
+
+        function actualizarContador() {
+            const ahora = new Date();
+            const diferencia = fechaLimite - ahora;
+
+            if (diferencia <= 0) {
+                document.querySelector('.contador').innerHTML = "¡Oferta terminada!";
+                return;
+            }
+
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+
+            const elementos = document.querySelectorAll('.contador span');
+            if(elementos.length >= 3) {
+                elementos[0].innerText = dias.toString().padStart(2, '0');
+                elementos[1].innerText = horas.toString().padStart(2, '0');
+                elementos[2].innerText = minutos.toString().padStart(2, '0');
+            }
+        }
+
+        setInterval(actualizarContador, 1000);
+        actualizarContador();
     </script>
 </body>
 </html>
