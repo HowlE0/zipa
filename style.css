@@ -233,3 +233,64 @@ header {
     .contacto-flex { flex-direction: column; }
     .contador { gap: 10px; }
 }
+/* --- ESTILOS DE SERVICIOS --- */
+.servicios-seccion {
+    padding: 80px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.titulo-seccion h2 { color: #002d5a; font-size: 32px; margin-bottom: 10px; }
+.titulo-seccion p { color: #666; margin-bottom: 50px; }
+
+.contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tarjeta-servicio {
+    background: #f8f9fa;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+.tarjeta-servicio:hover {
+    background: #002d5a;
+    color: white;
+    transform: translateY(-10px);
+}
+
+.servicio-icono { font-size: 50px; margin-bottom: 20px; }
+
+.servicio-precio {
+    display: block;
+    font-weight: bold;
+    color: #28a745;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.tarjeta-servicio:hover .servicio-precio { color: #00d4ff; }
+
+.boton-servicio {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #002d5a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tarjeta-servicio:hover .boton-servicio {
+    background-color: white;
+    color: #002d5a;
+}
