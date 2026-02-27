@@ -1,4 +1,4 @@
-/* --- 1. CONFIGURACIÓN GENERAL Y FUENTES --- */
+/* --- 1. CONFIGURACIÓN GENERAL --- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 html { scroll-behavior: smooth; }
@@ -9,12 +9,11 @@ body {
     margin: 0; padding: 0;
     color: #333;
     overflow-x: hidden;
-    /* Suavizado de fuentes profesional */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* --- 2. PANTALLA DE CARGA (LOADER) --- */
+/* --- 2. LOADER --- */
 #loader {
     position: fixed;
     top: 0; left: 0;
@@ -35,12 +34,9 @@ body {
     margin-bottom: 15px;
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
+@keyframes spin { 100% { transform: rotate(360deg); } }
 
-/* --- 3. ENCABEZADO Y MENÚ --- */
+/* --- 3. NAVEGACIÓN --- */
 header {
     background-color: white; 
     padding: 10px 0;
@@ -51,20 +47,18 @@ header {
 .logo { max-height: 70px; display: block; margin: 0 auto 10px auto; }
 
 .menu {
-    list-style: none; padding: 0;
-    display: flex; justify-content: center;
-    gap: 25px; margin: 10px 0;
+    list-style: none; padding: 0; display: flex; 
+    justify-content: center; gap: 25px; margin: 10px 0;
 }
 
 .menu a {
     text-decoration: none; color: #002d5a;
-    font-weight: bold; font-size: 16px;
-    transition: 0.3s;
+    font-weight: bold; font-size: 16px; transition: 0.3s;
 }
 
 .menu a:hover { color: #00d4ff; }
 
-/* --- 4. SECCIÓN HERO --- */
+/* --- 4. HERO --- */
 .hero {
     background: linear-gradient(rgba(0,45,90,0.05), rgba(0,45,90,0.05)), white;
     padding: 80px 20px; text-align: center;
@@ -73,230 +67,67 @@ header {
 .hero h1 { color: #002d5a; font-size: 45px; margin-bottom: 20px; }
 
 .boton-contacto {
-    display: inline-block;
-    padding: 15px 35px;
-    background-color: #28a745;
-    color: white; text-decoration: none;
-    border-radius: 50px; font-weight: bold;
-    transition: 0.3s;
+    display: inline-block; padding: 15px 35px;
+    background-color: #28a745; color: white;
+    text-decoration: none; border-radius: 50px;
+    font-weight: bold; transition: 0.3s;
     box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
 }
 
-.boton-contacto:hover {
-    transform: scale(1.05);
-    background-color: #218838;
+.boton-contacto:hover { transform: scale(1.05); background-color: #218838; }
+
+/* --- 5. SERVICIOS --- */
+.servicios-seccion { padding: 80px 20px; background-color: #ffffff; text-align: center; }
+
+.titulo-seccion { 
+    color: #002d5a; 
+    font-size: 32px; 
+    margin-bottom: 50px; 
+    font-weight: 700; 
 }
 
-/* --- 5. SECCIÓN DE GARANTÍA --- */
-.garantia-seccion {
-    display: flex; flex-wrap: wrap;
-    justify-content: center; gap: 40px;
-    padding: 50px 20px; background-color: white;
-    text-align: center;
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.garantia-item { max-width: 250px; padding: 20px; }
-.garantia-item .icono { font-size: 40px; display: block; margin-bottom: 15px; }
-
-/* --- 6. OFERTAS DEL MES --- */
-.ofertas-mes { padding: 60px 20px; background-color: #f0f4f8; }
-
-.oferta-banner {
-    background: linear-gradient(135deg, #002d5a 0%, #0056b3 100%);
-    color: white; border-radius: 20px;
-    padding: 40px; max-width: 900px;
-    margin: 0 auto; text-align: center;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-}
-
-.etiqueta-oferta {
-    background-color: #ffc107; color: #000;
-    padding: 5px 15px; border-radius: 50px;
-    font-weight: bold; font-size: 14px;
-}
-
-.contador {
-    display: flex; justify-content: center;
-    gap: 20px; margin: 25px 0;
-}
-
-.contador div {
-    background: rgba(255,255,255,0.1);
-    padding: 10px; border-radius: 10px;
-    min-width: 60px;
-}
-
-.contador span { display: block; font-size: 24px; font-weight: bold; }
-
-.boton-oferta {
-    display: inline-block; padding: 12px 30px;
-    background-color: white; color: #002d5a;
-    text-decoration: none; border-radius: 50px;
-    font-weight: bold; transition: 0.3s;
-}
-
-.boton-oferta:hover { background-color: #ffc107; transform: scale(1.05); }
-
-/* --- 7. PRODUCTOS --- */
-.contenedor-productos {
-    display: flex; flex-wrap: wrap;
-    justify-content: center; gap: 30px;
-    padding: 60px 20px; background-color: #96b4d1;
-}
-
-.tarjeta-producto {
-    background-color: white; border-radius: 15px;
-    width: 280px; padding: 20px;
-    text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    transition: all 0.4s ease;
-    position: relative; overflow: hidden;
-}
-
-.tarjeta-producto:hover { 
-    transform: translateY(-10px); 
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-}
-
-.tarjeta-producto::before {
-    content: ""; position: absolute;
-    top: -50%; left: -50%;
-    width: 200%; height: 200%;
-    background: rgba(255, 255, 255, 0.2);
-    transform: rotate(45deg);
-    transition: 0.5s; pointer-events: none;
-}
-
-.tarjeta-producto:hover::before { left: 100%; top: 100%; }
-
-.img-producto { 
-    width: 100%; border-radius: 10px; margin-bottom: 15px; 
-    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.tarjeta-producto:hover .img-producto { transform: scale(1.12); }
-
-.precio { font-size: 24px; font-weight: bold; color: #0056b3; margin: 10px 0; }
-
-.boton-comprar {
-    display: block; text-align: center;
-    text-decoration: none; background-color: #ffc107;
-    color: #000; padding: 12px;
-    border-radius: 8px; font-weight: bold;
-    margin-top: 10px; transition: all 0.3s ease;
-}
-
-.boton-comprar:hover { background-color: #e0a800; transform: scale(1.05); }
-
-/* --- 8. SERVICIOS --- */
-.servicios-seccion {
-    padding: 80px 20px;
-    background-color: white;
-    text-align: center;
-}
-
-.titulo-seccion h2 { color: #002d5a; font-size: 32px; margin-bottom: 10px; }
-.titulo-seccion p { color: #666; margin-bottom: 50px; }
-
-.contenedor-servicios {
-    display: flex; flex-wrap: wrap;
-    justify-content: center; gap: 30px;
-    max-width: 1200px; margin: 0 auto;
-}
-
-.tarjeta-servicio {
-    background: #f8f9fa;
-    border: 1px solid #eee;
-    border-radius: 20px;
+.servicio-card {
+    background: #f8fafc;
     padding: 40px 30px;
-    width: 300px;
-    transition: 0.3s;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+    text-align: left;
 }
 
-.tarjeta-servicio:hover {
-    background: #002d5a;
-    color: white;
+.servicio-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-color: #00d4ff;
 }
 
-.servicio-icono { font-size: 50px; margin-bottom: 20px; }
+.icono-servicio { font-size: 40px; color: #00d4ff; margin-bottom: 20px; display: block; }
+.servicio-card h3 { color: #002d5a; margin-bottom: 15px; font-size: 22px; }
+.servicio-card ul { list-style: none; padding: 0; margin: 0; }
+.servicio-card ul li { padding: 8px 0; color: #64748b; position: relative; padding-left: 25px; }
+.servicio-card ul li::before { content: "✓"; position: absolute; left: 0; color: #28a745; font-weight: bold; }
 
-.servicio-precio {
-    display: block;
-    font-weight: bold;
-    color: #28a745;
-    margin: 20px 0;
-    font-size: 18px;
-}
-
-.tarjeta-servicio:hover .servicio-precio { color: #00d4ff; }
-
-.boton-servicio {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #002d5a;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.tarjeta-servicio:hover .boton-servicio {
-    background-color: white;
-    color: #002d5a;
-}
-
-/* --- 9. CONTACTO --- */
+/* --- 6. CONTACTO --- */
 .contacto-seccion { padding: 80px 20px; background-color: #fff; text-align: center; }
-
-.contacto-flex {
-    display: flex; flex-wrap: wrap;
-    justify-content: center; gap: 40px;
-    max-width: 1100px; margin: 0 auto;
-}
-
+.contacto-flex { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1100px; margin: 0 auto; }
 .formulario { flex: 1; min-width: 300px; display: flex; flex-direction: column; gap: 15px; text-align: left; }
 .formulario input, .formulario textarea { padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-family: inherit; }
+.boton-enviar { background-color: #002d5a; color: white; padding: 15px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+.boton-enviar:hover { background-color: #00d4ff; color: #002d5a; }
 
-#form-status {
-    margin-top: 10px; padding: 10px;
-    border-radius: 8px; display: none;
-    font-weight: bold;
-}
-.success { background-color: #28a745; color: white; }
-.error { background-color: #dc3545; color: white; }
-
-.mapa { flex: 1; min-width: 300px; border-radius: 15px; overflow: hidden; height: 350px; }
-
-/* --- 10. PIE DE PÁGINA --- */
-.pie-pagina { background-color: #002d5a; color: white; padding: 40px 20px; text-align: center; }
-
-/* --- 11. WHATSAPP FLOTANTE --- */
-.whatsapp-float {
-    position: fixed; bottom: 20px; right: 20px;
-    background-color: #25d366; color: white;
-    width: 60px; height: 60px; border-radius: 50%;
-    display: flex; justify-content: center; align-items: center;
-    font-size: 30px; box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
-    z-index: 2000; text-decoration: none; transition: 0.3s;
-}
-.whatsapp-float:hover { transform: scale(1.1) rotate(10deg); color: white; }
-
-/* --- 12. ANIMACIONES Y RESPONSIVE --- */
-@keyframes subir {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.hero-contenido, .tarjeta-producto, .contacto-seccion, .garantia-item {
-    animation: subir 0.8s ease-out forwards;
-}
-
-@media (max-width: 768px) {
-    .hero h1 { font-size: 32px; }
-    .menu { gap: 15px; }
-    .menu a { font-size: 14px; }
-    .tarjeta-producto { width: 100%; max-width: 320px; }
-    .contacto-flex { flex-direction: column; }
-    .contador { gap: 10px; }
+/* --- 7. WHATSAPP Y OTROS --- */
+.whatsapp-float { 
+    position: fixed; bottom: 20px; right: 20px; 
+    background-color: #25d366; color: white; 
+    width: 60px; height: 60px; border-radius: 50%; 
+    display: flex; justify-content: center; align-items: center; 
+    font-size: 30px; z-index: 2000; text-decoration: none; 
 }

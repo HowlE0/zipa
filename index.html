@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zipa Electronics | Tecnología</title>
-    <meta name="description" content="Zipa Electronics: Los mejores componentes tecnológicos, multímetros, cautines y soluciones electrónicas en un solo lugar.">
+    <title>Zipa Electronics | Tecnología y Componentes</title>
+    
+    <meta name="description" content="Zipa Electronics: Los mejores componentes tecnológicos, multímetros, cautines y soluciones electrónicas en Zipaquirá.">
+    <meta name="keywords" content="electrónica, tecnología, componentes, multímetros, zipaquirá, cautines, sensores">
     
     <meta property="og:title" content="Zipa Electronics | Componentes y Soluciones">
     <meta property="og:description" content="Los mejores componentes electrónicos en Zipaquirá. Calidad garantizada.">
-    <meta property="og:image" content="logo-zipa.png"> <link rel="icon" href="logo-zipa.png" type="image/png">
+    <meta property="og:image" content="logo-zipa.png">
+    
+    <link rel="icon" href="logo-zipa.png" type="image/png">
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -37,8 +42,67 @@
         <section id="inicio" class="hero">
             <div class="hero-contenido">
                 <h1>Bienvenidos a Zipa Electronics</h1>
-                <p>Tu aliado en componentes y soluciones tecnológicas.</p>
+                <p>Tu aliado en componentes y soluciones tecnológicas con la mejor calidad del mercado.</p>
                 <a href="#seccion-contacto" class="boton-contacto">Contactar con un asesor</a>
+            </div>
+        </section>
+
+        <section id="servicios" class="servicios-seccion">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Nuestros Servicios Especializados</h2>
+                <div class="servicios-grid">
+                    
+                    <div class="servicio-card">
+                        <i class="fas fa-laptop-code icono-servicio"></i>
+                        <h3>Sistemas y Software</h3>
+                        <ul>
+                            <li>Formateo e Instalación de Sistemas</li>
+                            <li>Microsoft Office y Antivirus</li>
+                            <li>Actualización de Software</li>
+                            <li>Instalación de Programas y Juegos</li>
+                        </ul>
+                    </div>
+
+                    <div class="servicio-card">
+                        <i class="fas fa-tools icono-servicio"></i>
+                        <h3>Hardware y Ensamble</h3>
+                        <ul>
+                            <li>Venta de Partes y Componentes</li>
+                            <li>Ensamble de Computadores a medida</li>
+                            <li>Mantenimiento Preventivo</li>
+                            <li>Venta de Partes y Ensamble</li>
+                        </ul>
+                    </div>
+
+                    <div class="servicio-card">
+                        <i class="fas fa-microchip icono-servicio"></i>
+                        <h3>Laboratorio Electrónico</h3>
+                        <ul>
+                            <li>Reparación Electrónica Avanzada</li>
+                            <li>Mantenimiento de Equipos</li>
+                            <li>Diagnóstico de Fallas</li>
+                            <li>Soldadura de Precisión</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="garantia-seccion">
+            <div class="garantia-item">
+                <span class="icono">🛡️</span>
+                <h3>Calidad Garantizada</h3>
+                <p>Componentes testeados antes del envío.</p>
+            </div>
+            <div class="garantia-item">
+                <span class="icono">🚚</span>
+                <h3>Envíos Rápidos</h3>
+                <p>Despachos a todo el país en tiempo récord.</p>
+            </div>
+            <div class="garantia-item">
+                <span class="icono">💬</span>
+                <h3>Soporte Técnico</h3>
+                <p>Asesoría especializada para tus proyectos.</p>
             </div>
         </section>
 
@@ -47,38 +111,27 @@
                 <div class="oferta-texto">
                     <span class="etiqueta-oferta">OFERTA LIMITADA</span>
                     <h2>¡Súper Combo de Inicio!</h2>
+                    <p>Lleva Multímetro + Cautín + Soldadura con un 20% de descuento.</p>
                     <div class="contador" id="countdown">
                         <div><span id="days">00</span><small>Días</small></div>
                         <div><span id="hours">00</span><small>Horas</small></div>
                         <div><span id="minutes">00</span><small>Min</small></div>
                         <div><span id="seconds">00</span><small>Seg</small></div>
                     </div>
-                    <a href="https://wa.me/573017723021" class="boton-oferta">Reclamar Oferta</a>
+                    <a href="https://wa.me/573017723021?text=Hola!%20Me%20interesa%20la%20oferta%20del%20combo%20de%20inicio" class="boton-oferta">Reclamar Oferta</a>
                 </div>
             </div>
         </section>
 
-        <section id="seccion-contacto" class="contacto-seccion">
-            <h2>Contáctanos</h2>
-            <div class="contacto-flex">
-                <form action="https://formspree.io/f/mjgeyqoj" method="POST" class="formulario" id="contact-form">
-                    <input type="text" name="nombre" placeholder="Tu Nombre" required>
-                    <input type="email" name="email" placeholder="Tu Correo" required>
-                    <textarea name="mensaje" placeholder="¿En qué podemos ayudarte?" rows="5" required></textarea>
-                    <button type="submit" class="boton-enviar">Enviar Mensaje</button>
-                    <div id="form-status"></div>
-                </form>
-                <div class="mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15900.565314781745!2d-74.002!3d5.023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e401673895a9401%3A0x6d1f05489f648d79!2sZipaquir%C3%A1%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1700000000000!5m2!1ses!2sco" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+        <section id="nuestros-productos" class="contenedor-productos">
+            <h2 style="width: 100%; text-align: center; color: #002d5a; margin-bottom: 40px;">Productos Destacados</h2>
+            
+            <div class="tarjeta-producto">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&h=300" alt="Multímetro" class="img-producto">
+                <h3>Multímetro Digital</h3>
+                <p class="precio">$85.000</p>
+                <a href="https://wa.me/573017723021" target="_blank" class="boton-comprar">Comprar</a>
             </div>
-        </section>
-    </main>
 
-    <a href="https://wa.me/573017723021" class="whatsapp-float" target="_blank" rel="noopener">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <script src="script.js"></script>
-</body>
-</html>
+            <div class="tarjeta-producto">
+                <img src="
