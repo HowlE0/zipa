@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zipa Electronics | Tecnología</title>
-    
     <meta name="description" content="Zipa Electronics: Los mejores componentes tecnológicos, multímetros, cautines y soluciones electrónicas en un solo lugar.">
-    <meta name="keywords" content="electrónica, tecnología, componentes, multímetros, zipaquirá">
-    <link rel="icon" href="logo-zipa.png" type="image/png">
+    
+    <meta property="og:title" content="Zipa Electronics | Componentes y Soluciones">
+    <meta property="og:description" content="Los mejores componentes electrónicos en Zipaquirá. Calidad garantizada.">
+    <meta property="og:image" content="logo-zipa.png"> <link rel="icon" href="logo-zipa.png" type="image/png">
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -36,26 +37,8 @@
         <section id="inicio" class="hero">
             <div class="hero-contenido">
                 <h1>Bienvenidos a Zipa Electronics</h1>
-                <p>Tu aliado en componentes y soluciones tecnológicas con la mejor calidad del mercado.</p>
+                <p>Tu aliado en componentes y soluciones tecnológicas.</p>
                 <a href="#seccion-contacto" class="boton-contacto">Contactar con un asesor</a>
-            </div>
-        </section>
-
-        <section class="garantia-seccion">
-            <div class="garantia-item">
-                <span class="icono">🛡️</span>
-                <h3>Calidad Garantizada</h3>
-                <p>Todos nuestros componentes son testeados antes del envío.</p>
-            </div>
-            <div class="garantia-item">
-                <span class="icono">🚚</span>
-                <h3>Envíos Rápidos</h3>
-                <p>Despachos a todo el país en menos de 24 horas.</p>
-            </div>
-            <div class="garantia-item">
-                <span class="icono">💬</span>
-                <h3>Soporte Técnico</h3>
-                <p>Asesoría especializada para tus proyectos electrónicos.</p>
             </div>
         </section>
 
@@ -64,69 +47,13 @@
                 <div class="oferta-texto">
                     <span class="etiqueta-oferta">OFERTA LIMITADA</span>
                     <h2>¡Súper Combo de Inicio!</h2>
-                    <p>Lleva Multímetro + Cautín + Soldadura con un 20% de descuento.</p>
-                    <div class="contador">
-                        <div><span>00</span><small>Días</small></div>
-                        <div><span>00</span><small>Horas</small></div>
-                        <div><span>00</span><small>Min</small></div>
+                    <div class="contador" id="countdown">
+                        <div><span id="days">00</span><small>Días</small></div>
+                        <div><span id="hours">00</span><small>Horas</small></div>
+                        <div><span id="minutes">00</span><small>Min</small></div>
+                        <div><span id="seconds">00</span><small>Seg</small></div>
                     </div>
-                    <a href="https://wa.me/573017723021?text=Hola!%20Me%20interesa%20la%20oferta%20del%20combo%20de%20inicio" class="boton-oferta">Reclamar Oferta</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="nuestros-productos" class="contenedor-productos">
-            <div class="tarjeta-producto">
-                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=400&h=300" alt="Multímetro Digital" class="img-producto">
-                <h3>Multímetro Digital</h3>
-                <p class="precio">$85.000</p>
-                <a href="https://wa.me/573017723021?text=Hola%20Zipa%20Electronics!%20Me%20gustar%C3%ADa%20comprar%20el%20Mult%C3%ADmetro%20Digital." target="_blank" class="boton-comprar" style="text-decoration: none; display: block;">Comprar</a>
-            </div>
-
-            <div class="tarjeta-producto">
-                <img src="https://images.unsplash.com/photo-1620216434237-975586617a2a?auto=format&fit=crop&w=400&h=300" alt="Cautín Profesional" class="img-producto">
-                <h3>Cautín Profesional</h3>
-                <p class="precio">$45.000</p>
-                <a href="https://wa.me/573017723021?text=Hola%20Zipa%20Electronics!%20Me%20gustar%C3%ADa%20comprar%20el%20Caut%C3%ADn%20Profesional." target="_blank" class="boton-comprar" style="text-decoration: none; display: block;">Comprar</a>
-            </div>
-
-            <div class="tarjeta-producto">
-                <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&w=400&h=300" alt="Osciloscopio" class="img-producto">
-                <h3>Osciloscopio Digital</h3>
-                <p class="precio">$320.000</p>
-                <a href="https://wa.me/573017723021?text=Hola%20Zipa%20Electronics!%20Me%20gustar%C3%ADa%20comprar%20el%20Osciloscopio%20Digital." target="_blank" class="boton-comprar" style="text-decoration: none; display: block;">Comprar</a>
-            </div>
-        </section>
-
-        <section id="servicios" class="servicios-seccion">
-            <div class="titulo-seccion">
-                <h2>Servicios Especializados</h2>
-                <p>Soluciones técnicas con precisión y garantía</p>
-            </div>
-            
-            <div class="contenedor-servicios">
-                <div class="tarjeta-servicio">
-                    <div class="servicio-icono">💻</div>
-                    <h3>Mantenimiento de Equipos</h3>
-                    <p>Limpieza profunda, cambio de pasta térmica y optimización de hardware.</p>
-                    <span class="servicio-precio">Desde $80.000</span>
-                    <a href="https://wa.me/573017723021?text=Hola!%20Me%20interesa%20el%20servicio%20de%20mantenimiento" class="boton-servicio">Solicitar Servicio</a>
-                </div>
-
-                <div class="tarjeta-servicio">
-                    <div class="servicio-icono">🔬</div>
-                    <h3>Reparación de Circuitos</h3>
-                    <p>Diagnóstico de tarjetas electrónicas y soldadura especializada.</p>
-                    <span class="servicio-precio">Desde $50.000</span>
-                    <a href="https://wa.me/573017723021?text=Hola!%20Necesito%20ayuda%20con%20un%20circuito" class="boton-servicio">Solicitar Servicio</a>
-                </div>
-
-                <div class="tarjeta-servicio">
-                    <div class="servicio-icono">👨‍🏫</div>
-                    <h3>Asesoría en Proyectos</h3>
-                    <p>Acompañamiento técnico en Arduino y robótica.</p>
-                    <span class="servicio-precio">Por hora: $45.000</span>
-                    <a href="https://wa.me/573017723021?text=Hola!%20Busco%20asesoría%20para%20un%20proyecto" class="boton-servicio">Agendar Clase</a>
+                    <a href="https://wa.me/573017723021" class="boton-oferta">Reclamar Oferta</a>
                 </div>
             </div>
         </section>
@@ -134,13 +61,24 @@
         <section id="seccion-contacto" class="contacto-seccion">
             <h2>Contáctanos</h2>
             <div class="contacto-flex">
-                <form action="https://formspree.io/f/mjgeyqoj" method="POST" class="formulario">
-                    <input type="hidden" name="_next" value="https://TU-USUARIO.github.io/NOMBRE-REPOSITORIO/gracias.html">
+                <form action="https://formspree.io/f/mjgeyqoj" method="POST" class="formulario" id="contact-form">
                     <input type="text" name="nombre" placeholder="Tu Nombre" required>
                     <input type="email" name="email" placeholder="Tu Correo" required>
                     <textarea name="mensaje" placeholder="¿En qué podemos ayudarte?" rows="5" required></textarea>
                     <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+                    <div id="form-status"></div>
                 </form>
-
                 <div class="mapa">
-                    <iframe src="
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15900.565314781745!2d-74.002!3d5.023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e401673895a9401%3A0x6d1f05489f648d79!2sZipaquir%C3%A1%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1700000000000!5m2!1ses!2sco" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="https://wa.me/573017723021" class="whatsapp-float" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
