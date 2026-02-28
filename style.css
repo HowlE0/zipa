@@ -113,3 +113,48 @@ header {
     display: flex; justify-content: center; align-items: center;
     font-size: 25px; z-index: 2000; text-decoration: none;
 }
+/* --- MEJORA DEL MENÚ --- */
+.menu a {
+    color: #002d5a;
+    position: relative;
+    padding: 5px 0;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00d4ff;
+    transition: 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+/* --- ESTILO PARA EL MENSAJE DE ÉXITO DEL FORMULARIO --- */
+#form-status {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    display: none; /* Se activa con el script.js */
+    font-size: 14px;
+    text-align: center;
+}
+
+#form-status.success {
+    display: block;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+#form-status.error {
+    display: block;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
